@@ -1,0 +1,985 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: #111;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 1;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-design {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ee4410;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+/* NAVIGATION */
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ee4410;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #000;
+    color: #fff;
+}
+
+.perfume-text {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.perfume-text h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.perfume-name {
+    font-size: 26px;
+    color: #aaa;
+}
+
+.perfume-desc {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.perfume-price {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.div-image {
+    display: flex;
+    gap: 15px;
+}
+
+.div-image img {
+    width: 80px;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.div-image img:hover {
+    transform: scale(1.1);
+}
+
+/* BUTTON */
+
+.buy-now {
+    width: 120px;
+    height: 50px;
+    background-color: #b8b3b3;
+    border: 1px solid #fff;
+    color: #000;
+    font-size: 18px;
+    border: none;
+}
+
+.buy-now:hover {
+    background-color: #ee4410;
+    border-color: #ee4410;
+}
+
+/* IMAGE */
+
+.perfume-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.perfume-image img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+}
+
+/* =========================
+   DIFFERENT SECTION
+========================= */
+
+.different-section {
+    padding: 80px 80px;
+}
+
+.different-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.different-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 70px;
+}
+
+.product img {
+    width: 550px;
+}
+
+.different-container .product-info-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.different-container .product-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f0f0f;
+}
+
+.different-container .product-desc {
+    font-size: 16px;
+    color: #464141;
+}
+
+.different-container .buy-now {
+    margin-bottom: 50px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* =========================
+   DISCOVER SECTION
+========================= */
+
+.image-sec {
+    height: 100vh;
+    background-image: url("./img/image-5.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.image-sec h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-right: 300px;
+}
+
+.image-sec img {
+    max-width: 70px;
+    height: auto;
+    margin-right: 300px;
+    margin-left: -305px;
+}
+
+/* =========================
+   CUSTOMER SECTION
+========================= */
+
+.customer-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 40px;
+    background-color: #e8e2e9;
+}
+
+.cus-img img {
+    width: 500px;
+}
+
+.cus-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cus-text h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.cus-text h2 strong {
+    font-weight: 700;
+}
+
+.cus-text h3 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.cus-text-con {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cus-text-con p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* =========================
+   INSTAGRAM SECTION
+========================= */
+
+.instagram {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.instagram h3 {
+    font-size: 24px;
+}
+
+.ins-img {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.ins-img img {
+    width: 230px;
+    transition: transform 0.3s ease;
+}
+
+.ins-img img:hover {
+    transform: scale(1.05);
+}
+
+.instagram-btn {
+    padding: 10px 20px;
+    background-color: #e1306c;
+    color: #fff;
+    font-size: 18px;
+}
+
+.instagram-btn i {
+    font-size: 20px;
+}
+
+.instagram-btn:hover {
+    background-color: #c91c57;
+}
+
+/* =========================
+   LAST PRODUCT SECTION
+========================= */
+
+.last-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.last-img img {
+    max-width: 550px;
+}
+
+.last-section .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 550px;
+}
+
+.last-section .product-info h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.last-section .product-info .perfume-name {
+    font-size: 24px;
+}
+
+.last-section .product-info p {
+    font-size: 18px;
+    color: #666;
+}
+
+.last-section .product-info .price {
+    font-size: 36px;
+    color: #242323;
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+}
+
+.button .buy-now {
+    background-color: #e7e6e6;
+}
+
+.button button {
+    width: 140px;
+    height: 50px;
+    border: 1px solid #000;
+    background: transparent;
+}
+
+.button button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-flex a {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-flex a:hover {
+    color: #fff;
+}
+
+.language-btn {
+    width: 230px;
+    height: 45px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+.language-btn:hover {
+    background-color: #111;
+}
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        padding: 20px 25px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    #menu-toggle:checked~.navbar {
+        max-height: 300px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    /* Hero section */
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .perfume-text {
+        display: contents;
+    }
+
+    .perfume-text h1 {
+        order: 1;
+        font-size: 36px;
+    }
+
+    .perfume-name {
+        order: 2;
+        font-size: 20px;
+    }
+
+    .perfume-image {
+        order: 3;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .perfume-image img {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .perfume-desc {
+        order: 4;
+        font-size: 16px;
+        max-width: 400px;
+    }
+
+    .perfume-price {
+        order: 5;
+        font-size: 28px;
+    }
+
+    .div-image {
+        order: 6;
+        justify-content: center;
+    }
+
+    .buy-now {
+        order: 7;
+        margin: 0 auto;
+    }
+
+    /* Different section */
+
+    .different-section {
+        padding: 30px;
+    }
+
+    .different-section h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .different-section .different-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .different-container .product-info-1 .product-text,
+    .product-desc {
+        margin-bottom: -50px;
+    }
+
+    .different-section .different-container .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+    }
+
+
+    /* Discover section */
+
+    .image-sec {
+        padding: 20px;
+    }
+
+    .image-sec h2 {
+        font-size: 18px;
+    }
+
+    .image-sec img {
+        max-width: 40px;
+    }
+
+    /* Customer section */
+
+    .customer-sec {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .cus-img img {
+        max-width: 100%;
+    }
+
+    .customer-sec .cus-text h2 {
+        font-size: 32px;
+    }
+
+    .customer-sec .cus-text h3 {
+        font-size: 28px;
+    }
+
+    .customer-sec .cus-text .cus-text-con p {
+        font-size: 14px;
+    }
+
+    /* Instagram section */
+
+    .instagram {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .instagram h3 {
+        font-size: 24px;
+    }
+
+    .instagram .ins-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .instagram .instagram-btn {
+        font-size: 16px;
+    }
+
+    /* Product section */
+
+    .last-section {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .last-section .last-img img {
+        max-width: 100%;
+    }
+
+    .last-section .product-info h2 {
+        font-size: 32px;
+    }
+
+    .last-section .product-info .perfume-name {
+        display: none;
+    }
+
+    .last-section .product-info p {
+        font-size: 16px;
+    }
+
+    .last-section .product-info .price {
+        font-size: 32px;
+    }
+
+    .last-section .product-info .button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* footer */
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .footer .footer-flex {
+        flex-wrap: wrap;
+        grid-template-columns: 1fr, 1fr;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .footer-flex .res {
+        all: unset;
+        margin-right: 42px;
+    }
+
+    .footer .footer-flex .res li {
+        list-style-type: none;
+        line-height: 2.5;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Header section */
+
+    .header {
+        position: relative;
+        padding: 18px 15px;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .menu-icon span {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        display: block;
+    }
+
+    /* navbar container */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #000;
+        z-index: 1000;
+    }
+
+    .navbar .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    #menu-toggle:checked~.navbar .nav-list {
+        display: flex;
+    }
+
+    /* Hero section */
+
+    .hero-section {
+        flex-direction: column;
+        padding: 25px 15px;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .perfume-text {
+        gap: 18px;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .perfume-text h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .perfume-name {
+        font-size: 16px;
+    }
+
+    .perfume-desc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .perfume-price {
+        font-size: 24px;
+    }
+
+    .div-image {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .div-image img {
+        width: 55px;
+    }
+
+    .buy-now {
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .perfume-image img {
+        max-width: 280px;
+    }
+
+    /* Different section */
+
+    .different-section {
+        padding: 25px 15px;
+    }
+
+    .different-section h2 {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .different-section .different-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .different-section .different-container .product {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Discover section */
+
+    .image-sec {
+        flex-direction: column;
+        padding: 25px 15px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .image-sec h2 {
+        display: none;
+    }
+
+    .image-sec img {
+        display: none;
+    }
+
+    /* Customer section */
+
+    .customer-sec {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+        gap: 20px;
+    }
+
+    .cus-img img {
+        max-width: 260px;
+        width: 100%;
+    }
+
+    .customer-sec .cus-text {
+        width: 100%;
+    }
+
+    .customer-sec .cus-text h2 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .customer-sec .cus-text h3 {
+        font-size: 20px;
+    }
+
+    .customer-sec .cus-text .cus-text-con p {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 0 5px;
+    }
+
+    /* Instagram section */
+
+    .instagram {
+        padding: 25px 15px;
+        gap: 20px;
+    }
+
+    .instagram h3 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .instagram .ins-img {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .instagram .ins-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    .instagram .instagram-btn {
+        font-size: 14px;
+        padding: 10px 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* production section */
+
+    .last-section {
+        flex-direction: column;
+        padding: 25px 15px;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .last-section .last-img img {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .last-section .product-info {
+        width: 100%;
+    }
+
+    .last-section .product-info h2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .last-section .product-info .perfume-name {
+        display: none;
+    }
+
+    .last-section .product-info p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .last-section .product-info .price {
+        font-size: 26px;
+    }
+
+    .last-section .product-info .button {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .last-section .product-info .button button {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 25px 15px;
+    }
+
+    .footer .footer-flex {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer .footer-flex .res {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .footer .footer-flex .res li {
+        line-height: 2;
+        font-size: 14px;
+    }
+
+}
