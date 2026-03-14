@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
+    background: linear-gradient(90deg, rgba(18, 6, 6, 1) 0%, rgba(13, 9, 9, 1) 48%, rgba(15, 25, 26, 1) 80%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow:
+        0 0 5px #19bdd3,
+        0 0 10px #15cac1,
+        0 0 15px #1ed4d4;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 5px 15px;
+    color: #999;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+header nav ul li:hover {
+    color: #fff;
+}
+
+.hero {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 80px;
+    max-height: 100vh;
+    background-color: #000;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 78px;
+}
+
+.hero-text span {
+    text-shadow:
+        0 0 5px #19bdd3,
+        0 0 10px #15cac1,
+        0 0 15px #1ed4d4;
+    
+}
+
+.hero-text h2 {
+    font-size: 38px;
+    margin: 20px 0;
+    color: gray;
+}
+
+.hero-text p {
+    color: #aaa;
+    font-size: 24px;
+    letter-spacing: 0.7px;
+}
+
+.hero-robot {
+    width: 600px;
+    height: 500px;
+}
+
+.hero-robot iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
