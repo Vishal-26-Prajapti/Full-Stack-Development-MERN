@@ -7,6 +7,7 @@
         <title>My-Portfolio</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="shortcut icon" href="./Vishal_logo.png" type="image/x-icon">
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     </head>
 
     <body>
@@ -16,35 +17,105 @@
             </div>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Experience</li>
-                    <li>Contact</li>
-                    <li>Resume</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section class="hero">
-        
+        <section id="home" class="hero">
+
             <div class="hero-text">
                 <h1>Hi, I'm <span>Vishal</span></h1>
                 <h2>MERN Stack Developer</h2>
-        
+
                 <p>
                     Crafting immersive digital experiences with modern web technologies,
                     3D visuals, and fluid animations.
                 </p>
             </div>
-        
+
             <div class="hero-robot">
                 <iframe src="https://my.spline.design/genkubgreetingrobot-F3eCtbxlCPvuCyfb4PgRvMPv/">
                 </iframe>
             </div>
-        
+
         </section>
+
+        <section id="about" class="about-me">
+
+            <div class="about-img">
+                <img src="./My-Photo.png" alt="Vishal">
+            </div>
+
+            <div class="about-text">
+
+                <h2>About <span>Me</span></h2>
+
+                <p>
+                    Hello! I'm <b>Vishal Prajapati</b>, a passionate
+                    <b><span class="highlight">MERN Stack Developer</span></b> who loves building
+                    modern and interactive web applications.
+                </p>
+
+                <p>
+                    I specialize in developing full-stack applications using
+                    <b>MongoDB, Express.js, React.js, and Node.js</b>.
+                    My focus is creating fast, scalable, and user-friendly web experiences.
+                </p>
+
+                <p>
+                    Currently, I am improving my skills by building real-world projects like
+                    authentication systems, dashboards, and responsive web apps.
+                </p>
+
+                <p>
+                    My goal is to become a highly skilled software developer and build
+                    impactful digital products that solve real-world problems.
+                </p>
+
+                <button class="about-btn">Download Resume</button>
+
+            </div>
+
+        </section>
+
+        <section id="skills" class="skills">
+
+            <h2>My <span>Skills</span></h2>
+
+            <div class="skills-container">
+
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React.js</div>
+                <div class="skill-card">Node.js</div>
+                <div class="skill-card">Express.js</div>
+                <div class="skill-card">MongoDB</div>
+                <div class="skill-card">REST API</div>
+                <div class="skill-card">Tailwind CSS</div>
+                <div class="skill-card">Git</div>
+                <div class="skill-card">GitHub</div>
+                <div class="skill-card">VS Code</div>
+                <div class="skill-card">Spline 3D</div>
+                <div class="skill-card">Responsive Design</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">C</div>
+                <div class="skill-card">C++</div>
+                <div class="skill-card">Django</div>
+                <div class="skill-card">DSA</div>
+
+            </div>
+
+        </section>
+
     </body>
 
 </html>

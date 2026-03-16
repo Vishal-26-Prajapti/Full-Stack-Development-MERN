@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -33,7 +37,8 @@ header nav ul {
     align-items: center;
 }
 
-header nav ul li {
+header nav ul li a {
+    text-decoration: none;
     list-style-type: none;
     padding: 5px 15px;
     color: #999;
@@ -43,7 +48,7 @@ header nav ul li {
     cursor: pointer;
 }
 
-header nav ul li:hover {
+header nav ul li a:hover {
     color: #fff;
 }
 
@@ -70,7 +75,7 @@ header nav ul li:hover {
         0 0 5px #19bdd3,
         0 0 10px #15cac1,
         0 0 15px #1ed4d4;
-    
+
 }
 
 .hero-text h2 {
@@ -88,10 +93,134 @@ header nav ul li:hover {
 .hero-robot {
     width: 600px;
     height: 500px;
+    transition: 0.5s;
+}
+
+.hero-robot:hover {
+    transform: scale(1.15) translateY(-20px);
 }
 
 .hero-robot iframe {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6;
+    padding: 120px 80px;
+    background: #000;
+    color: #fff;
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    cursor: pointer;
+    width: 320px;
+    border-radius: 50%;
+    transition: 0.5s;
+    box-shadow:
+        0 0 15px #19bdd3,
+        0 0 30px #15cac1,
+        0 0 60px #1ed4d4;
+}
+
+.about-img img:hover {
+    transform: scale(1.15) translateY(-20px);
+    box-shadow:
+        0 0 25px #19bdd3,
+        0 0 50px #15cac1,
+        0 0 120px #1ed4d4;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 550px;
+}
+
+.about-text h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.about-text span {
+    color: #19bdd3;
+}
+
+.about-text p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-btn {
+    margin-top: 20px;
+    padding: 12px 28px;
+    border: none;
+    background: #19bdd3;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #15cac1;
+    transform: scale(1.1);
+    box-shadow:
+        0 0 10px #19bdd3,
+        0 0 20px #15cac1,
+        0 0 40px #1ed4d4;
+}
+
+.skills {
+    padding: 120px 80px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+.skills span {
+    color: #19bdd3;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skill-card {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #19bdd3;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 10px #19bdd3,
+        0 0 20px #15cac1,
+        0 0 40px #1ed4d4;
 }
