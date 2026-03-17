@@ -7,14 +7,20 @@
         <title>My-Portfolio</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="shortcut icon" href="./Vishal_logo.png" type="image/x-icon">
-        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     </head>
 
     <body>
+        
+        <!-- header -->
         <header>
             <div>
                 <h1>Vishal</h1>
             </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -23,11 +29,12 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="#resume">Resume</a></li>
                 </ul>
             </nav>
         </header>
 
+        <!-- hero-section -->
         <section id="home" class="hero">
 
             <div class="hero-text">
@@ -47,6 +54,7 @@
 
         </section>
 
+        <!-- about-me section  -->
         <section id="about" class="about-me">
 
             <div class="about-img">
@@ -79,12 +87,15 @@
                     impactful digital products that solve real-world problems.
                 </p>
 
-                <button class="about-btn">Download Resume</button>
+                <a id="resume" href="./Vishal_Resume.pdf" target="_blank">
+                    <button class="about-btn">Download Resume</button>
+                </a>
 
             </div>
 
         </section>
 
+        <!-- skills-section -->
         <section id="skills" class="skills">
 
             <h2>My <span>Skills</span></h2>
@@ -116,6 +127,166 @@
 
         </section>
 
+        <!-- projects-section -->
+        <section id="projects" class="projects">
+            <h2>My
+                <span>
+                    Projects
+                </span>
+            </h2>
+            <div class="projects-container">
+                <div class="project-box">
+                    <img src="./speech-to-text.png" alt="Speech to Text Converter">
+                    <div class="overlay">
+                        <h3>Speech to Text Converter</h3>
+                        <p>Web app that converts voice input into text using speech recognition.</p>
+                        <a href="https://vishal-cos-speech-to-text-converter.vercel.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-box">
+                    <img src="./Internet-status-checker.png" alt="Internet Status Checker">
+                    <div class="overlay">
+                        <h3>Internet Status Checker</h3>
+                        <p>Web app that detects online/offline status in real-time.</p>
+                        <a href="https://vishal-cos-internet-status-checker.vercel.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-box">
+                    <img src="./Italian-leather-perfume.png" alt="Italian Leather Perfume UI">
+                    <div class="overlay">
+                        <h3>Italian Leather Perfume UI</h3>
+                        <p>Stylish product landing page showcasing UI/UX design with animations and responsive layout.</p>
+                        <a href="https://vishal-cos-italian-leather-perfume.vercel.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-box">
+                    <img src="./Tic-tac-toe.png" alt="Tic Tac Toe Game">
+                    <div class="overlay">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Classic Tic Tac Toe game with interactive UI and real-time player turns using JavaScript.</p>
+                        <a href="https://vishal-cos-tic-tac-toe2.vercel.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-box">
+                    <img src="./houston-face.png" alt="Face Detection App">
+                    <div class="overlay">
+                        <h3>Face Detection App</h3>
+                        <p>AI-based app that detects human faces in real-time using computer vision.</p>
+                        <a href="https://vishal-cos-houstom-face.vercel.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-box">
+                    <img src="./add-notes.png" alt="Notes App">
+                    <div class="overlay">
+                        <h3>Notes App</h3>
+                        <p>Simple and responsive app to create, edit, and delete notes.</p>
+                        <a href="https://vishal-cos-notes-app.netlify.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- experience -->
+        <section id="experience" class="experience">
+            <h2>My <span>Experience</span></h2>
+        
+            <div class="experience-container">
+        
+                <div class="exp-box">
+                    <h3>Self Learning & Projects</h3>
+                    <span>2026 - Present</span>
+                    <p>
+                        Built multiple full-stack and frontend projects using MERN stack.
+                        Gained hands-on experience in authentication, APIs, and responsive UI design.
+                    </p>
+                </div>
+        
+                <div class="exp-box">
+                    <h3>CodexFuture ELMS</h3>
+                    <span>Major Project</span>
+                    <p>
+                        Developed a full-stack E-learning platform with admin & student dashboards,
+                        course management, and authentication system using MERN stack.
+                    </p>
+                </div>
+        
+            </div>
+        </section>
+        
+        <!-- contact -->
+        <section id="contact" class="contact">
+            <h2>Contact <span>Me</span></h2>
+        
+            <div class="contact-container">
+        
+                <div class="contact-info">
+                    <div>
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:vishal212121prajapati@gmail.com">vishal212121prajapati@gmail.com</a>
+                        </p>
+                        
+                        <p>
+                            <strong>Phone:</strong>
+                            <a href="tel:+919518780609">+91 95187 80609</a>
+                        </p>
+                        
+                        <p>
+                            <strong>GitHub:</strong>
+                            <a href="https://github.com/Vishal-26-Prajapti" target="_blank">
+                                github.com/Vishal-26-Prajapti
+                            </a>
+                        </p>
+                        
+                        <p>
+                            <strong>LinkedIn:</strong>
+                            <a href="https://www.linkedin.com/in/vishalprajapati9518/" target="_blank">
+                                linkedin.com/in/vishalprajapati9518
+                            </a>
+                        </p>
+                    </div>
+                </div>
+        
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+        
+            </div>
+        </section>
+        
+        <!-- footer -->
+        <footer class="footer">
+        
+            <div class="footer-container">
+        
+                <p>© 2026 Vishal Prajapati | All Rights Reserved</p>
+        
+                <div class="social-links">
+                    <a href="https://github.com/Vishal-26-Prajapti" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/vishalprajapati9518/" target="_blank">LinkedIn</a>
+                    <a href="mailto:vishal212121prajapati@gmail.com">Email</a>
+                </div>
+        
+            </div>
+        
+        </footer>
+
+        <script>
+            const menuToggle = document.getElementById("menu-toggle");
+            const navbar = document.getElementById("navbar");
+
+            menuToggle.addEventListener("click", () => {
+                navbar.classList.toggle("active");
+            });
+        </script>
     </body>
 
 </html>
