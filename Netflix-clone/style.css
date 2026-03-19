@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    background: transparent;
+}
+
+header img {
+    height: 40px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header div select {
+    width: 100px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+}
+
+header div a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.hero {
+    background-image: url('./images/bg-image.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.hero .master {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+}
+
+.hero .master .content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.hero .master .content h4 {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 20px;
+}
+
+.hero .master .content p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 5px 30px;
+}
+
+.hero .master .content div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.hero .master .content div input {
+    width: 60%;
+    height: 7vh;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    color: white;
+    padding: 30px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.hero .master .content div input::placeholder {
+    color: #888;
+    font-weight: 500;
+}
+
+.hero .master .content div button {
+    width: 40%;
+    height: 9vh;
+    background-color: red;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 70px 150px;
+    background-color: #000;
+    color: white;
+    position: relative;
+}
+
+.trending::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #000;
+    border-top: 3px solid #ff0055;
+    border-radius: 100% 100% 0 0;
+    box-shadow: inset 0 15px 25px -10px rgba(255, 255, 255, 0.2);
+    /* box-shadow: inset 0 10px 20px rgba(, 0, 0, 0.9); */
+}
+
+.trending .images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    left: 20px;
+}
+
+.trending .images .image {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.trending .images .image:hover {
+    transform: scale(1.06);
+}
+
+.trending .images .image img {
+    height: 250px;
+    width: 100%;
+    max-width: 180px;
+    border-radius: 10px;
+}
+
+.trending .images .image h1 {
+    position: absolute;
+    bottom: 1px;
+    left: -15px;
+    font-size: 100px;
+    color: black;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+}
