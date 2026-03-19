@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 body {
@@ -15,17 +14,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 150px;
+    padding: 20px 10%;
     background: transparent;
 }
 
 header img {
     height: 40px;
+    max-width: 100%;
 }
 
 header div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
@@ -36,7 +35,7 @@ header div select {
     color: white;
     font-weight: bold;
     background: rgba(0, 0, 0, 0.6);
-    font-size: 15px;
+    font-size: 14px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 5px;
 }
@@ -45,11 +44,13 @@ header div a {
     text-decoration: none;
     background-color: red;
     color: white;
-    padding: 5px 20px;
+    padding: 6px 16px;
     font-weight: 600;
     border-radius: 5px;
     font-size: 14px;
 }
+
+/* hero-section */
 
 .hero {
     background-image: url('./images/bg-image.jpg');
@@ -61,13 +62,20 @@ header div a {
 
 .hero .master {
     height: 100vh;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.9) 100%);
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.6) 50%,
+            rgba(0, 0, 0, 0.9) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5px;
     color: white;
+}
+
+.hero .master .content {
+    max-width: 800px;
 }
 
 .hero .master .content h1 {
@@ -124,7 +132,14 @@ header div a {
     font-weight: 600;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
+
+.hero .master .content div button:hover {
+    background-color: rgb(236, 17, 17);
+}
+
+/* trending movies */
 
 .trending {
     display: flex;
@@ -152,7 +167,8 @@ header div a {
 
 .trending .images {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     position: relative;
     left: 20px;
@@ -183,4 +199,649 @@ header div a {
     color: black;
     font-weight: 900;
     -webkit-text-stroke: 2px white;
+}
+
+/* reasons */
+
+.reasons {
+    padding: 0 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #000;
+    color: white;
+}
+
+.reasons .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.reasons .cards .card {
+    background: linear-gradient(135deg, #30027a, #45036b, #430357);
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.reasons .cards .card img {
+    width: 30%;
+    margin-bottom: -10px;
+}
+
+.reasons .cards .card div p {
+    margin-top: 10px;
+}
+
+.reasons .cards .card h3 {
+    font-size: 22px;
+}
+
+.reasons .cards .card p {
+    font-size: 14px;
+    color: #999;
+    font-weight: 600;
+}
+
+/* question-section */
+
+.que-sec {
+    background-color: #000;
+    color: white;
+    padding: 50px 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.que-sec .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.que-sec .questions .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+.que-sec .questions .question h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.que-sec .questions .question div {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.que-sec .questions .question:hover {
+    background-color: #444;
+}
+
+/* email-section */
+
+.email-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: white;
+}
+
+.email-sec p {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 5px 30px;
+}
+
+.email-sec div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-sec div input {
+    width: 550px;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    color: #999;
+    padding: 15px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.email-sec div button {
+    background-color: red;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 30px;
+}
+
+/* footer */
+
+.footer-sec {
+    padding: 50px 140px;
+    background-color: #000;
+    color: #888;
+}
+
+.footer-sec p {
+    margin-top: 30px;
+}
+
+.footer-sec select {
+    background: transparent;
+    color: #888;
+    padding: 5px 15px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: #888;
+}
+
+@media (max-width: 1260px) {
+    header {
+        padding: 20px 60px;
+    }
+
+    .hero .master .content h1 {
+        font-size: 38px;
+    }
+
+    .hero .master .content h4 {
+        font-size: 14px;
+    }
+
+    .hero .master .content p {
+        font-size: 12px;
+    }
+
+    .hero .master .content div input {
+        height: 4vh;
+    }
+
+    .hero .master .content div button {
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .trending h2 {
+        font-size: 22px;
+    }
+
+    .trending .images .image {
+        width: 18%;
+        flex-wrap: wrap;
+    }
+
+    .trending .images .image h1 {
+        font-size: 82px;
+    }
+
+    .reasons h2 {
+        font-size: 22px;
+    }
+
+    .reasons .cards .card {
+        width: 230px;
+        height: 250px;
+    }
+
+    .reasons .cards .card img {
+        width: 20%;
+    }
+
+    .reasons .cards .card h3 {
+        font-size: 18px;
+    }
+
+    .reasons .cards .card p {
+        font-size: 12px;
+    }
+
+    .que-sec h2 {
+        font-size: 22px;
+    }
+
+    .que-sec .questions .question {
+        padding: 5px 25px;
+    }
+
+    .que-sec .questions .question h3 {
+        font-size: 18px;
+    }
+
+    .que-sec .questions .question div {
+        font-size: 40px;
+    }
+
+    .email-sec div input {
+        font-size: 12px;
+    }
+
+    .email-sec div button {
+        font-size: 20px;
+    }
+
+    footer li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 15px 50px;
+    }
+
+    header img {
+        height: 30px;
+    }
+
+    .hero .master .content h1 {
+        font-size: 28px;
+    }
+
+    .hero .master .content h4 {
+        font-size: 12px;
+    }
+
+    .hero .master .content p {
+        font-size: 10px;
+    }
+
+    .hero .master .content div input {
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    .hero .master .content div button {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .trending h2 {
+        font-size: 18px;
+    }
+
+    .trending .images .image {
+        width: 160px;
+        flex-wrap: wrap;
+    }
+
+    .trending .images .image img {
+        width: 100%;
+    }
+
+    .trending .images .image h1 {
+        font-size: 72px;
+    }
+
+    .reasons h2 {
+        font-size: 18px;
+    }
+
+    .reasons .cards .card {
+        width: 340px;
+        height: 250px;
+    }
+
+    .que-sec h2 {
+        font-size: 18px;
+    }
+
+    .que-sec .questions .question {
+        padding: 0 20px;
+    }
+
+    .que-sec .questions .question h3 {
+        font-size: 18px;
+    }
+
+    .que-sec .questions .question div {
+        font-size: 32px;
+    }
+
+    .email-sec div input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .email-sec div button {
+        font-size: 16px;
+    }
+
+    footer li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    header img {
+        height: 20px;
+    }
+
+    header div select {
+        font-size: 12px;
+    }
+
+    header div a {
+        font-size: 12px;
+    }
+
+    .hero .master .content h1 {
+        font-size: 24px;
+    }
+
+    .hero .master .content div input {
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .hero .master .content div button {
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .trending {
+        padding: 70px 25px;
+    }
+
+    .trending .images .image {
+        width: 230px;
+        height: 180px;
+        margin-bottom: 90px;
+        flex-wrap: wrap;
+    }
+
+    .trending .images .image img {
+        width: 100%;
+    }
+
+    .trending .images .image h1 {
+        font-size: 62px;
+        top: 150px;
+    }
+
+    .reasons {
+        padding: 0 25px;
+    }
+
+    .reasons .cards .card {
+        width: 48%;
+        height: 200px;
+    }
+
+    .reasons .cards .card h3 {
+        font-size: 18px;
+    }
+
+    .reasons .cards .card img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .que-sec {
+        padding: 50px 25px;
+    }
+
+    .que-sec .questions .question {
+        padding: 0 10px;
+    }
+
+    .que-sec .questions .question h3 {
+        font-size: 14px;
+    }
+
+    .que-sec .questions .question div {
+        font-size: 24px;
+    }
+
+    .email-sec p {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .email-sec div input {
+        padding: 10px;
+        font-size: 14px;
+        width: 400px;
+    }
+
+    .email-sec div button {
+        font-size: 14px;
+    }
+
+    .footer-sec {
+        padding: 10px 25px;
+        background-color: #000;
+        color: #888;
+    }
+
+    .footer-sec p {
+        margin-top: 16px;
+        font-size: 14px;
+    }
+
+    .footer-sec select {
+        padding: 5px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+    }
+
+    footer ul li {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 530px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header img {
+        height: 15px;
+    }
+
+    header div select {
+        font-size: 8px;
+        padding: 5px;
+    }
+
+    header div a {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    .hero .master .content h1 {
+        font-size: 18px;
+    }
+
+    .hero .master .content div {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .hero .master .content div input {
+        width: 100%;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .hero .master .content div button {
+        width: 100%;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .trending {
+        padding: 70px 20px;
+        align-items: center;
+    }
+
+    .trending .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .trending .images .image {
+        height: 160px;
+    }
+
+    .trending .images .image h1 {
+        font-size: 52px;
+        top: 160px;
+    }
+
+    .reasons {
+        padding: 0 25px;
+    }
+
+    .reasons h2 {
+        text-align: center;
+    }
+
+    .reasons .cards {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .reasons .cards .card {
+        width: 100%;
+        height: 200px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .reasons .cards .card h3 {
+        font-size: 18px;
+    }
+
+    .reasons .cards .card img {
+        height: 30%;
+        width: 15%;
+    }
+
+    .que-sec {
+        padding: 30px 25px;
+    }
+
+    .que-sec h2 {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .que-sec .questions .question h3 {
+        font-size: 12px;
+    }
+
+    .que-sec .questions .question div {
+        font-size: 18px;
+    }
+
+    .email-sec p {
+        font-size: 12px;
+        margin-top: -10px;
+        text-align: center;
+
+    }
+
+    .email-sec div {
+        padding: 0 25px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .email-sec div input {
+        padding: 10px;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .email-sec div button {
+        padding: 5px 20px;
+        font-size: 14px;
+        width: 40%;
+    }
+
+    .footer-sec {
+        padding: 10px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer-sec footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-sec footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-sec p {
+        margin-top: 16px;
+        font-size: 12px;
+        text-align: center;
+    }
 }
