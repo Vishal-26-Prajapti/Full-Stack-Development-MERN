@@ -167,7 +167,7 @@ header div a {
 
 .trending .images {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
@@ -813,9 +813,9 @@ footer ul li a {
     }
 
     .email-sec div button {
-        padding: 5px 20px;
+        padding: 10px 20px;
         font-size: 14px;
-        width: 40%;
+        width: 100%;
     }
 
     .footer-sec {
