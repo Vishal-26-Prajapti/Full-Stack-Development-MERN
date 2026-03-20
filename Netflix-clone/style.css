@@ -691,38 +691,38 @@ footer ul li a {
     }
 
     header img {
-        height: 15px;
+        height: 18px;
     }
 
     header div select {
-        font-size: 8px;
+        font-size: 12px;
         padding: 5px;
     }
 
     header div a {
-        font-size: 10px;
-        padding: 3px 5px;
+        font-size: 12px;
+        padding: 5px 10px;
     }
 
     .hero .master .content h1 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .hero .master .content div {
         flex-direction: column;
-        margin: 10px;
+        margin: 5px 20px;
     }
 
     .hero .master .content div input {
         width: 100%;
-        height: 28px;
-        font-size: 12px;
+        height: 34px;
+        font-size: 14px;
     }
 
     .hero .master .content div button {
         width: 100%;
-        height: 28px;
-        font-size: 12px;
+        height: 34px;
+        font-size: 14px;
     }
 
     .trending {
@@ -740,6 +740,8 @@ footer ul li a {
 
     .trending .images .image {
         height: 160px;
+        background-position: center;
+        background-size: cover;
     }
 
     .trending .images .image h1 {
